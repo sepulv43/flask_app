@@ -6,7 +6,7 @@ load_dotenv(find_dotenv())
 
 api_key = os.environ['FORECASTIO_API_TOKEN']
 
-def get_weather(address,):
+def get_weather(address):
 	geolocator = Nominatim()
 	location = geolocator.geocode(address)
 	if location == None: 
